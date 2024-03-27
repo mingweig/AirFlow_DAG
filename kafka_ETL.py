@@ -201,7 +201,7 @@ with DAG(
     
     run_external_load_script = BashOperator(
         task_id='run_external_load_script',
-        bash_command='python /Users/gaomingwei/Desktop/2024_Spring/11_695/my_etl_project/bigquery.py',
+        bash_command='python /bigquery.py',
     )
 
     
