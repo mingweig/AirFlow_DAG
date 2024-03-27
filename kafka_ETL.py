@@ -191,7 +191,7 @@ with DAG(
     def load_data_ext(**kwargs):
         ti = kwargs['ti']
         transformed_data = ti.xcom_pull(task_ids='transform_data', key='transformed_data')
-        csv_path = '/Users/gaomingwei/Desktop/2024_Spring/11_695/my_etl_project/transformed_data.csv'
+        csv_path = '/transformed_data.csv'
         transformed_data.to_csv(csv_path, index=False)
     
     load_task_ext = PythonOperator(
