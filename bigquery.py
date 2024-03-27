@@ -45,5 +45,5 @@ def load_data_to_bigquery(data_file):
     print("Data loaded successfully.")
 
 if __name__ == '__main__':
-    csv_path = '/Users/gaomingwei/Desktop/2024_Spring/11_695/my_etl_project/transformed_data.csv'
+    csv_path = '/transformed_data.csv'
     load_data_to_bigquery(csv_path)
